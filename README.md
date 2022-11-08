@@ -19,14 +19,14 @@ Switches: ***/i /f /d""***
 
 
 * ***/i*** install cURL to System  
-* use with ***/d*** else it will only downloaded to actual dir of this batch.
+use with ***/d*** else it will only downloaded to actual dir of this batch.
 
 
 
 * ***/f*** Force update  
-* Downloads curl and ignore local and system version number
+Downloads curl and ignore local and system version number
 
 
 
 * ***/d*** **"full\path\for\installing\curl\"**  
-* e.g. **"C:\Programms\curl\"**
+e.g. **"C:\Programms\curl\"**
