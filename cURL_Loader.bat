@@ -1,5 +1,25 @@
 @ECHO Off && TITLE cURL Loader && COLOR 0D
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                  ::
+::                   cURL Loader                    ::
+:: Simple batch to load and install/update cURL.exe ::
+::                   Version 1.0                    ::
+::         Coded by Prinzessin@flampinko.it         ::
+::                                                  ::
+::     use on your own. no warranty for nothing.    ::
+::                                                  ::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+REM Switches: /i /f /d""
+REM /i install cURL to System
+REM use with /d else it will only downloaded to actual dir of this batch.
+REM /f Force update
+REM Downloads curl and ignore local and system version number
+REM /d "full/path/for/installing/curl/"
+REM e.g. "C:\Programms\curl\"
+
+
 :VORBEREITUNG
 IF EXIST "%TEMP%\curl-latest.zip" DEL /F /S /Q "%TEMP%\curl-latest.zip" >NUL 2>NUL
 IF EXIST "%TEMP%\version.txt" DEL /F /S /Q "%TEMP%\version.txt" >NUL 2>NUL
